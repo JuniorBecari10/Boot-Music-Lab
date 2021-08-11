@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Amiga Forever", sans-serif;
+    
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 a {
@@ -118,4 +125,15 @@ footer {
 
 #play-btn:hover {
     background-color: #1da536;
+}
+
+.note {
+    width: 50px;
+}
+
+.notes {
+    position: absolute;
+    
+    left: 30px;
+    bottom: 40px;
 }
