@@ -1,0 +1,121 @@
+@import url('http://fonts.cdnfonts.com/css/amiga-forever');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amiga Forever", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+/*---------------------------------------*/
+
+header {
+    border-bottom: 2px solid rgba(0, 0, 0, 60%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 50%);
+    
+    text-align: center;
+    
+    width: 100%;
+}
+
+header h1 {
+    padding: 10px 0;
+    
+    font-size: 20pt;
+}
+
+header #return {
+    position: absolute;
+    
+    left: 15px;
+    top: 5px;
+    
+    width: 50px;
+    
+    border-radius: 10%;
+    
+    transition: background-color 0.3s;
+}
+
+
+header #return:hover {
+    background-color: #bbb;
+}
+
+header #options {
+    position: absolute;
+    
+    right: 8px;
+    top: 8px;
+    
+    width: 50px;
+    
+    border-radius: 10%;
+    
+    transition: background-color 0.3s;
+}
+
+header #options img {
+    padding-left: 10px;
+}
+
+header #options:hover {
+    background-color: #bbb;
+}
+
+footer {
+    position: absolute;
+    
+    bottom: 0;
+    
+    border-top: 2px solid rgba(0, 0, 0, 60%);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 50%);
+    
+    text-align: center;
+    
+    width: 100%;
+    height: 90px;
+}
+
+#play-btn {
+    position: absolute;
+    
+    left: 30px;
+    bottom: 70px;
+    
+    padding: 20px;
+    
+    border: 2px solid black;
+    border-radius: 50%;
+    
+    background-color: #26d646;
+    
+    width: 100px;
+    height: 100px;
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+    
+    cursor: pointer;
+    
+    transition: background-color 0.3s;
+}
+
+#play-btn img {
+    margin-left: 8px;
+    padding-top: 5px;
+    
+    width: 50px;
+}
+
+#play-btn:hover {
+    background-color: #1da536;
+}
