@@ -7,11 +7,7 @@
     font-family: "Amiga Forever", sans-serif;
     
     user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
     -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 a {
@@ -21,6 +17,12 @@ a {
 
 img {
     image-rendering: pixelated;
+    
+    user-select: none;
+    -moz-user-select: none;
+    
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /*---------------------------------------*/
@@ -132,8 +134,5 @@ footer {
 }
 
 .notes {
-    position: absolute;
     
-    left: 30px;
-    bottom: 40px;
 }
