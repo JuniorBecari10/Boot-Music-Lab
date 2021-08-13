@@ -37,7 +37,7 @@ header {
 header h1 {
     padding: 10px 0;
     
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 header #return {
@@ -77,6 +77,27 @@ header #options img {
 
 header #options:hover {
     background-color: #bbb;
+}
+
+header .name {
+    position: absolute;
+    
+    left: 50%;
+    top: 80px;
+    
+    transform: translateX(-50%);
+    
+    border: none;
+    border-bottom: 1px solid black;
+    
+    text-align: center;
+    
+    transition: border-bottom 0.5s;
+}
+
+header .name:focus {
+    outline: none;
+    border-bottom: 3px solid black;
 }
 
 footer {
@@ -144,6 +165,16 @@ footer {
     bottom: 20px;
 }
 
-#notes::after {
+#notes.a {
+    content: "";
+    
+    position: absolute;
+    
+    left: 150px;
+    bottom: 20px;
+    
+    width: 350px;
+    height: 50px;
+    
     background-color: red;
 }
