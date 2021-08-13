@@ -8,14 +8,7 @@
     
     user-drag: none; 
     -webkit-user-drag: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-img {
+    
     image-rendering: pixelated;
     
     user-select: none;
@@ -23,6 +16,11 @@ img {
     
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /*---------------------------------------*/
@@ -131,8 +129,21 @@ footer {
 
 .note {
     width: 50px;
+    
+    transition: margin-bottom 0.5s;
 }
 
-.notes {
+.note:hover {
+    margin-bottom: 10px;
+}
+
+#notes { /* o seu besta quadrada vc tem que saber que quando é id se usa # */
+    position: absolute;
     
+    left: 80px;
+    bottom: 20px;
+}
+
+#notes::after {
+    background-color: red;
 }
