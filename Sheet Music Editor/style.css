@@ -165,22 +165,22 @@ footer {
     bottom: 20px;
 }
 
-.sel {
-    border-bottom: 2px solid blue;
-}
-
-#notes.a {
+#notes::after, #modifiers::after {
     content: "";
     
-    position: absolute;
+    position: relative; /* relative é relativo à posição original dele */
+    display: inline-block;
     
-    left: 150px;
-    bottom: 20px;
+    left: 15px;
     
-    width: 350px;
     height: 50px;
     
-    background-color: red;
+    border-right: 1px solid black;
+}
+
+
+.sel {
+    border-bottom: 2px solid blue;
 }
 
 .modifier {
