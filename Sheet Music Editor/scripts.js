@@ -2,8 +2,10 @@
 
 const notes_btns = Array.from(document.getElementsByClassName("note"));
 const note_modifiers_btns = Array.from(document.getElementsByClassName("modifier"));
+const rests_btns = Array.from(document.getElementsByClassName("rest"));
 
-const btns_all = concat_arrays(notes_btns, note_modifiers_btns);
+const notes_modifiers = concat_arrays(notes_btns, note_modifiers_btns);
+const btns_all = concat_arrays(notes_modifiers, rests_btns);
 
 // Events
 

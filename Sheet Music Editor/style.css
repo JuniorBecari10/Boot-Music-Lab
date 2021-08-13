@@ -149,12 +149,12 @@ footer {
 }
 
 .note {
-    width: 50px;
+    width: 40px;
     
     transition: margin-bottom 0.5s;
 }
 
-.note:hover, .modifier:hover {
+.note:hover, .modifier:hover, .rest:hover {
     margin-bottom: 10px;
 }
 
@@ -165,7 +165,7 @@ footer {
     bottom: 20px;
 }
 
-#notes::after, #modifiers::after {
+#notes::after, #modifiers::after, #rests::after {
     content: "";
     
     position: relative; /* relative é relativo à posição original dele */
@@ -173,9 +173,13 @@ footer {
     
     left: 15px;
     
-    height: 50px;
+    height: 40px;
     
     border-right: 1px solid black;
+}
+
+#notes::after {
+    bottom: 5px;
 }
 
 
@@ -184,7 +188,7 @@ footer {
 }
 
 .modifier {
-    width: 40px;
+    width: 30px;
     
     transition: margin-bottom 0.5s;
 }
@@ -192,6 +196,23 @@ footer {
 #modifiers {
     position: absolute;
     
-    left: 590px;
-    bottom: 20px;
+    left: 515px;
+    bottom: 25px;
+}
+
+.rest {
+    width: 30px;
+    
+    transition: margin-bottom 0.5s;
+}
+
+#rests {
+    position: absolute;
+    
+    left: 700px;
+    bottom: 25px;
+}
+
+footer a > img {
+    padding-bottom: 5px;
 }
