@@ -154,7 +154,7 @@ footer {
     transition: margin-bottom 0.5s;
 }
 
-.note:hover {
+.note:hover, .modifier:hover {
     margin-bottom: 10px;
 }
 
@@ -163,6 +163,10 @@ footer {
     
     left: 80px;
     bottom: 20px;
+}
+
+.sel {
+    border-bottom: 2px solid blue;
 }
 
 #notes.a {
@@ -177,4 +181,17 @@ footer {
     height: 50px;
     
     background-color: red;
+}
+
+.modifier {
+    width: 40px;
+    
+    transition: margin-bottom 0.5s;
+}
+
+#modifiers {
+    position: absolute;
+    
+    left: 590px;
+    bottom: 20px;
 }
