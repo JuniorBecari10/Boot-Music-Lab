@@ -1,3 +1,5 @@
+"use strict";
+
 // Declarations
 
 const notes_btns = Array.from(document.getElementsByClassName("note"));
@@ -7,7 +9,15 @@ const rests_btns = Array.from(document.getElementsByClassName("rest"));
 const notes_modifiers = concat_arrays(notes_btns, note_modifiers_btns);
 const btns_all = concat_arrays(notes_modifiers, rests_btns);
 
+// ----
+
+const canvas = document.getElementById("canvas");
+
+const context = canvas.getContext("2d");
+
 // Events
+
+window.onload = init;
 
 window.onbeforeunload = function() { // Perguntar se a pessoa quer sair
     return "Do you want to leave?";
@@ -40,3 +50,25 @@ function concat_arrays(arr1, arr2) {
     return arr1;
 }
 
+// -- Tick & Render
+
+function tick() {
+    
+}
+
+function render() {
+    
+}
+
+// - Init Functions
+
+function loop() {
+    tick();
+    render();
+    
+    window.requestAnimationFrame(loop);
+}
+
+function init() {
+    window.requestAnimationFrame(loop);
+}
