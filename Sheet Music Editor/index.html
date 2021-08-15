@@ -22,10 +22,12 @@
             
             <a href="#"><img src="Resources/Icons/options.png" id="options"></a>
             
-            <input type="text" class="name" placeholder="Music Name">
+            <input type="text" class="name" placeholder="Music Name" spellcheck="false" />
         </header>
         
-        <canvas id="canvas"></canvas>
+        <div id="cnv">
+            <canvas id="canvas"></canvas>
+        </div>
         
         <footer>
             <div id="play-btn"><img src="Resources/Icons/play.png"></div>
@@ -56,6 +58,10 @@
                 <a><img src="Resources/Rests/sixty-fourth-rest.png" class="rest" id="sixty-fourth-rest"></a>
             </div>
         </footer>
+        
+        <div id="res">
+            <img src="Resources/Backgrounds/sheet.png" id="sheet-img">
+        <div>
         
         <script src="https://unpkg.com/tone@14.8.26/build/Tone.js"></script>
         <script src="scripts.js"></script>

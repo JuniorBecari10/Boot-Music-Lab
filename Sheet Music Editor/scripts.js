@@ -13,7 +13,11 @@ const btns_all = concat_arrays(notes_modifiers, rests_btns);
 
 const canvas = document.getElementById("canvas");
 
-const context = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");
+
+// ---- Resources ---- //
+
+const sheet = document.getElementById("sheet-img");
 
 // Events
 
@@ -36,12 +40,12 @@ for (let obj of btns_all) {
 
 // Functions
 
-function addClass(name, obj) {
+/*function addClass(name, obj) {
     let cls = obj.className;
     let newc = cls.concat(" " + name);
     
     return newc;
-}
+}*/
 
 function concat_arrays(arr1, arr2) {
     for (let e of arr2)
@@ -57,7 +61,7 @@ function tick() {
 }
 
 function render() {
-    
+    ctx.drawImage(sheet, 5, 10);
 }
 
 // - Init Functions
