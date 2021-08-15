@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 // Declarations
 
@@ -14,6 +14,12 @@ const btns_all = concat_arrays(notes_modifiers, rests_btns);
 const canvas = document.getElementById("canvas");
 
 const ctx = canvas.getContext("2d");
+
+// ----
+
+const music_name_input = document.getElementById("music-name");
+
+const cnv = document.getElementById("cnv");
 
 // ---- Resources ---- //
 
@@ -57,11 +63,14 @@ function concat_arrays(arr1, arr2) {
 // -- Tick & Render
 
 function tick() {
-    
+    if (cnv.scrollTop > 0)
+        music_name_input.classList.add("show-bg");
+    else
+        music_name_input.classList.remove("show-bg");
 }
 
 function render() {
-    ctx.drawImage(sheet, 5, 10);
+    ctx.drawImage(sheet, 5, 40);
 }
 
 // - Init Functions

@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/amiga-forever');
+@import url("http://fonts.cdnfonts.com/css/amiga-forever");
 
 * {
     margin: 0;
@@ -92,9 +92,7 @@ header .name {
     
     text-align: center;
     
-    background-color: transparent;
-    
-    transition: border-bottom 0.5s;
+    transition: all 0.5s;
 }
 
 header .name:focus {
@@ -223,6 +221,12 @@ footer a > img:hover {
     cursor: pointer;
 }
 
+input.show-bg {
+    border: 1px solid black;
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 #cnv {
     max-width: 1500px;
     
@@ -234,7 +238,7 @@ footer a > img:hover {
 
 canvas {
     width: 1500px;
-    height: 443px;
+    height: 100vh; /*70*/
     
     margin-top: 50px;
     
