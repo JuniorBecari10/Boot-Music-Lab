@@ -62,7 +62,7 @@ header #options {
     position: absolute;
     
     right: 8px;
-    top: 8px;
+    top: 5px;
     
     width: 50px;
     
@@ -72,7 +72,7 @@ header #options {
 }
 
 header #options img {
-    padding-left: 10px;
+    margin-left: 15px;
 }
 
 header #options:hover {
@@ -215,4 +215,17 @@ footer {
 
 footer a > img {
     padding-bottom: 5px;
+}
+
+footer a > img:hover {
+    cursor: pointer;
+}
+
+canvas {
+    width: 100%;
+    height: 444px;
+    
+    margin-top: 50px;
+    
+    border: 1px solid black;
 }
