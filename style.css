@@ -55,7 +55,7 @@ header h1 {
 
 .card {
     width: 130px;
-    height: 130px;
+    height: 210px;
     
     display: inline-block;
     
@@ -81,20 +81,38 @@ footer {
     position: absolute;
     
     width: 100%;
-    height: 100px;
+    height: 120px;
     
     bottom: 0;
     
     box-shadow: 0 -2px 5px rgba(0,0,0,50%);
+    
+    text-align: center;
 }
 
 footer h1 {
-    text-align: center;
-    
     margin-top: 5px;
 }
 
 footer p {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.tech {
+    border-top: 1px solid gray;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.tech p {
+    color: gray;
+    font-size: 6pt;
+}
+
+.tech img {
+    width: 30px;
+    
+    margin-top: 8px;
 }
