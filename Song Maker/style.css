@@ -15,6 +15,10 @@
     font-family: "p", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: "h1", sans-serif;
     font-weight: normal;
@@ -69,4 +73,36 @@ footer p {
     margin-top: 20px;
     margin-left: 5%;
     width: 90%;
+}
+
+#song-name {
+    width: 250px;
+    height: 20px;
+    
+    text-align: center;
+    font-size: 9pt;
+    
+    margin: 10px 50%;
+    transform: translateX(-50%);
+    
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    
+    transition: box-shadow 0.5s;
+}
+
+#song-name:focus {
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,50%);
+}
+
+canvas {
+    border: 1px solid black;
+    
+    width: 95%;
+    height: 68vh;
+    
+    margin: 10px 50%;
+    transform: translateX(-50%);
 }
