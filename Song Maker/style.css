@@ -50,6 +50,25 @@ header h1 {
     padding-top: 10px;
 }
 
+header img {
+    position: absolute;
+    display: inline-block;
+    
+    left: 10px;
+    top: 6px;
+    
+    padding: 5px;
+    border-radius: 10px;
+    
+    width: 40px;
+    
+    transition: background-color 0.5s;
+}
+
+header img:hover {
+    background-color: #aaa;
+}
+
 footer {
     border-top: 1px solid black;
     
